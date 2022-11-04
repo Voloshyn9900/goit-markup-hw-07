@@ -326,7 +326,7 @@ a{
     
 }
 
-.modal-item{
+.modal-div{
     position: relative;
     margin-bottom: 10px;
     display: flex;
@@ -381,7 +381,7 @@ a{
     position: absolute;
     left: 12px;
     top: 50%;
-
+    transform: translateY(-50%);
     transition: fill 250ms linear;
 
     
@@ -454,6 +454,7 @@ a{
 }
 
 .checkbox-text {
+    font-size: 14px;
     color: var(--gray-color-p);
     line-height: 1.46;
     letter-spacing: 0.03;
@@ -471,6 +472,7 @@ a{
 }
 
 .confirm{
+    font-size: 14px;
     color: var(--blue-color);
     line-height: 1.46;
     letter-spacing: 0.03;
@@ -959,7 +961,7 @@ a{
 
 
 .social-div {
-    margin-right: 70px;
+    /* margin-right: 70px; */
     
 }
 
@@ -1159,7 +1161,7 @@ a{
 }
 
 .mailing-div{
-    /* display: inline; */
+    margin-left: auto;
     
 
 }
