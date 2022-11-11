@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Студия</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <a class="header__logo" href="./index.html" lang="en"><span class="header__logo">Web</span><span class="header__logo header__logo-grey">Studio</span></a>
+                <a class="header__logo" href="./index.html" lang="en"><span class="header__logo">Web</span><span class="header__logo header__logo--black">Studio</span></a>
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link nav__link-current" href="./index.html">Студія</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студія</a></li>
                     <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Контакти</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contacts">Контакти</a></li>
                 </ul>
-                </nav>
+            </nav>
             <ul class="address__list">
                 <li class="address__item">
                     <a class="address__link" href="mailto:voloshyn9900@gmail.com">
@@ -91,7 +91,7 @@
                                             <use href="./img/img_svg/symbol-modal.svg#icon-modal-email"></use>
                                         </svg>
                                     </div>
-                                <div class="modal__div textarea">
+                                <div class="modal__div">
                                     <label class="modal__lable" for="textarea">Коментар</label>
                                     <textarea class="modal__textarea"
                                     name="textarea"
@@ -112,7 +112,7 @@
                                     </span>
                                 </label>
                                 </div>
-                            <button class="button-send" type="submit">Відправити</button>
+                            <button class="button__send" type="submit">Відправити</button>
                         </form>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                             </svg>
                         </div>
                         <h3 class="benefits__title">Увага до деталей</h3>
-                        <p class="benefits__tex">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>                      
+                        <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>                      
                     </li>
                     <li class="benefits__item">
                         <div class="benefits__div">
@@ -165,7 +165,7 @@
 
         <section class="occupation">
             <div class="container">
-                <h2 class="occupation__title">Чим ми займаємося</h2>
+                <h2 class="occupation__title title">Чим ми займаємося</h2>
                 <ul class="occupation__list">
                     <li class="occupation__item">
                         <img src="./img/img_index/box1.jpg" alt="Photo didn't load" width="370" height="294">
@@ -185,7 +185,7 @@
 
         <section class="command">
             <div class="container">
-                <h2 class="command__title">Наша команда</h2>
+                <h2 class="command__title title">Наша команда</h2>
                 <ul class="command__list">
                     <li class="command__item"><img src="./img/img_index/img-1-min.jpg" alt="Photo didn't load" width="270" height="260">
                         <div class="command__div">
@@ -336,9 +336,9 @@
         </section>
 
 
-        <section>
+        <section class="company">
             <div class="container">
-                <h1 class="company__title">Постійні клієнти</h1>
+                <h1 class="company__title title">Постійні клієнти</h1>
                 <ul class="company__list">
                 <li class="company__item">
                     <a class="company__link" href="index.html">
@@ -390,44 +390,44 @@
     <footer class="footer">
         <div class="container"> 
             <div class="footer__div">
-            <a class="footer__logo" href="./index.html" lang="en"><span class="footer__logo">Web</span><span class="footer__logo header__logo-white">Studio</span></a>
-            <address class="footer__address">
+            <a class="footer__logo" href="./index.html" lang="en"><span class="footer__logo">Web</span><span class="footer__logo footer__logo--white">Studio</span></a>
+            <address class="footer__address" id="contacts">
                 <ul class="footer__list">
-                    <li class="footer__item"><a class="address-navi-link white-color" href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" 
-                    target="_blank" rel="noreferrer noopener"> <!-- Открытие в новой вкладке -->
+                    <li class="footer__item"><a class="footer__link footer__link--white" href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" 
+                    target="blank" rel="noreferrer noopener"> <!-- Открытие в новой вкладке -->
                     м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="footer__item"><a class="address-navi-link" href="mailto:voloshyn9900@gmail.com">voloshyn9900@gmail.com</a></li>
-                    <li class="footer__item"><a class="address-navi-link" href="tel:380931959900">+38 093 195 99 00</a></li>
+                    <li class="footer__item"><a class="footer__link" href="mailto:voloshyn9900@gmail.com">voloshyn9900@gmail.com</a></li>
+                    <li class="footer__item"><a class="footer__link" href="tel:380931959900">+38 093 195 99 00</a></li>
                 </ul>
             </address>
             </div>
             <div class="social__div">
-                <p class="join-title">приєднуйтесь</p>
-                <ul class="social-list">
-                <li class="footer__social-item">
-                    <a class="social__link social__link-grey" href="#">
-                    <svg class="social__icon social__icon-grey" width="20" height="20">
+                <p class="join__title">приєднуйтесь</p>
+                <ul class="social__list--grey">
+                <li class="footer__social">
+                    <a class="social__link social__link--grey" href="#">
+                    <svg class="social__icon social__icon--grey" width="20" height="20">
                         <use href="./img/img_svg/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                     </a>
                 </li>
-                <li class="footer__social-item">
-                    <a class="social__link social__link-grey" href="#">
-                    <svg class="social__icon social__icon-grey" width="20" height="20">
+                <li class="footer__social">
+                    <a class="social__link social__link--grey" href="#">
+                    <svg class="social__icon social__icon--grey" width="20" height="20">
                         <use href="./img/img_svg/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                     </a>
                 </li>
-                <li class="footer__social-item">
-                    <a class="social__link social__link-grey" href="#">
-                    <svg class="social__icon social__icon-grey" width="20" height="20">
+                <li class="footer__social">
+                    <a class="social__link social__link--grey" href="#">
+                    <svg class="social__icon social__icon--grey" width="20" height="20">
                         <use href="./img/img_svg/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                     </a>
                 </li>
-                <li class="footer__social-item">
-                    <a class="social__link social__link-grey" href="#">
-                    <svg class="social__icon social__icon-grey" width="20" height="20">
+                <li class="footer__social">
+                    <a class="social__link social__link--grey" href="#">
+                    <svg class="social__icon social__icon--grey" width="20" height="20">
                         <use href="./img/img_svg/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                     </a>

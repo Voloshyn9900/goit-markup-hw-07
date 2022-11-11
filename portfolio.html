@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Портфолио</title>
 </head>
 <body>
@@ -18,11 +18,11 @@
         <div class="container">
             <nav class="header__nav">
                 <a class="header__logo" href="./index.html" lang="en"><span class="header__logo">Web</span><span
-                        class="header__logo header__logo-grey">Studio</span></a>
+                        class="header__logo header__logo--black">Studio</span></a>
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
-                    <li class="nav__item"><a class="nav__link nav__link-current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Контакти</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="address__list">
@@ -48,7 +48,7 @@
             <div class="container">
                 <h1 class="visually-hidden">Не понятно зачем этот H1, ну ладно)</h1>
                     <ul class="buttons__list">
-                        <li><button class="buttons__item buttons__item-current" type="buttons">Усі</button></li>
+                        <li><button class="buttons__item buttons__item--current" type="buttons">Усі</button></li>
                         <li><button class="buttons__item" type="buttons">Веб-сайти</button></li>
                         <li><button class="buttons__item" type="buttons">Додатки</button></li>
                         <li><button class="buttons__item" type="buttons">Дизайн</button></li>
@@ -218,48 +218,47 @@
         <div class="container">
             <div class="footer__div">
                 <a class="footer__logo" href="./index.html" lang="en"><span class="footer__logo">Web</span><span
-                        class="footer__logo header__logo-white">Studio</span></a>
-                <address class="footer__address">
+                        class="footer__logo footer__logo--white">Studio</span></a>
+                <address class="footer__address" id="contacts">
                     <ul class="footer__list">
-                        <li class="footer__item"><a class="address-navi-link white-color"
-                                href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" target="_blank" rel="noreferrer noopener">
+                        <li class="footer__item"><a class="footer__link footer__link--white"
+                                href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" target="blank" rel="noreferrer noopener">
                                 <!-- Открытие в новой вкладке -->
                                 м. Київ, пр-т Лесі Українки, 26
                             </a></li>
-                        <li class="footer__item"><a class="address-navi-link"
+                        <li class="footer__item"><a class="footer__link"
                                 href="mailto:voloshyn9900@gmail.com">voloshyn9900@gmail.com</a></li>
-                        <li class="footer__item"><a class="address-navi-link" href="tel:380931959900">+38 093 195 99 00</a>
-                        </li>
+                        <li class="footer__item"><a class="footer__link" href="tel:380931959900">+38 093 195 99 00</a></li>
                     </ul>
                 </address>
             </div>
             <div class="social__div">
-                <p class="join-title">приєднуйтесь</p>
-                <ul class="social-list">
-                    <li class="footer__social-item">
-                        <a class="social__link social__link-grey" href="#">
-                            <svg class="social__icon social__icon-grey" width="20" height="20">
+                <p class="join__title">приєднуйтесь</p>
+                <ul class="social__list--grey">
+                    <li class="footer__social">
+                        <a class="social__link social__link--grey" href="#">
+                            <svg class="social__icon social__icon--grey" width="20" height="20">
                                 <use href="./img/img_svg/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer__social-item">
-                        <a class="social__link social__link-grey" href="#">
-                            <svg class="social__icon social__icon-grey" width="20" height="20">
+                    <li class="footer__social">
+                        <a class="social__link social__link--grey" href="#">
+                            <svg class="social__icon social__icon--grey" width="20" height="20">
                                 <use href="./img/img_svg/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer__social-item">
-                        <a class="social__link social__link-grey" href="#">
-                            <svg class="social__icon social__icon-grey" width="20" height="20">
+                    <li class="footer__social">
+                        <a class="social__link social__link--grey" href="#">
+                            <svg class="social__icon social__icon--grey" width="20" height="20">
                                 <use href="./img/img_svg/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer__social-item">
-                        <a class="social__link social__link-grey" href="#">
-                            <svg class="social__icon social__icon-grey" width="20" height="20">
+                    <li class="footer__social">
+                        <a class="social__link social__link--grey" href="#">
+                            <svg class="social__icon social__icon--grey" width="20" height="20">
                                 <use href="./img/img_svg/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
